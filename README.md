@@ -24,7 +24,6 @@ A deep learning based real-time tarffic prediction model that is used to detect 
 * pytz
 * csv
 * HTML5-CSS
-* nltk
 
 ## Steps to run .ipynb files
 
