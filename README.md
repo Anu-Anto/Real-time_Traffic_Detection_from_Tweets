@@ -63,6 +63,30 @@ While in the server’s home directory, we have to create the directory that wil
     mkdir buttonpython
     cd buttonpython
 
+While inside the django-apps directory, create your virtual environment. Let’s call it cnn_env.
+
+    virtualenv cnn_env
+
+ Now, activate the virtual environment with the following command:
+
+    . cnn_env/bin/activate
+
+Within the environment, install the Django package using pip. Installing Django allows us to create and run Django applications. To learn more about Django, read our tutorial series on Django Development.
+
+    pip install django
+
+ Once installed, verify your Django installation by running a version check:
+
+    django-admin --version
+    
+### Step 3 : Install the following.
+
+* nltk
+* pandas
+* geopy
+* tweepy
+   
+
 ## Note:-
 
 * If changes in dataset is made, model might give out undesirable outputs.
