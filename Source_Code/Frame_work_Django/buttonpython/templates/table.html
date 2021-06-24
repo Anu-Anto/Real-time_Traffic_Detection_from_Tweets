@@ -1,0 +1,49 @@
+<!-- Table ( WebPage2 ) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Traffic Details</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+	<body>
+		<div class="container">
+			<h2 class="text-center">Traffic Data New York</h2><br>			
+			<table class="table table-white table-striped">
+				<thead>
+					<tr>
+						<th>Sl_No</th>
+						<th>Date</th>
+						<th>Time NY Now</th>
+						<th>Tweet created time NY</th>
+						<th>Tweet created time IN</th>
+						<th>Tweet</th>
+						<th>Location</th>
+						<th>Prediction</th>						
+					</tr>
+				</thead>
+				<tbody>
+					{% if d %}
+					{% for i in d %}
+					<tr>
+						<td>{{i.Sl_No}}</td>	
+						<td>{{i.Date}}</td>	
+						<td>{{i.Time_Ny_Now}}</td>
+						<td>{{i.Tweet_created_at_time_NY}}</td>
+						<td>{{i.Tweet_created_at_time_IN}}</td>
+						<td>{{i.Tweet}}</td>
+						<td>{{i.Location}}</td>
+						<td>{{i.Prediction}}</td>
+					</tr>
+					{% endfor %}
+					{% endif %}
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
+
