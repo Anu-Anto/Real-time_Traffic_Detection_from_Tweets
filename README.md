@@ -2,8 +2,6 @@
 BTech CSE Final Year Project 2020-21
 
 
-# Real Time Traffic Detection From Tweets
-
 A deep learning based real-time tarffic prediction model that is used to detect the road traffic using twitter data.
  
 ## Modules used
